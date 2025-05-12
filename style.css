@@ -1,0 +1,45 @@
+.cal-sans-regular {
+    font-family: "Cal Sans", sans-serif;
+    font-style: normal;
+}
+header{
+    background-color: #30615a;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(26, 32, 32);
+    padding: 0px;
+    margin: 0px;
+}
+
+.titolo{
+    text-align: center;
+    color: #d3fbd8;
+    font-size: 40px;
+    font-family: "Cal Sans", sans-serif;
+}
+
+div{
+    text-align: center;
+    color: rgb(202, 202, 202);
+}
+
+.content{
+    font-size: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer{
+    padding-bottom: 0px;
+    margin-bottom: auto;
+}
+
+.fondo{
+    color: #d3fbd8;
+    text-align: center;
+}
