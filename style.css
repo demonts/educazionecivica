@@ -3,9 +3,36 @@
     font-style: normal;
 }
 header{
-    background-color: #30615a;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav1{
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+
+.links{
+    color: #b5daa4;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid white;
+    border-color: rgb(202, 202, 202);
+    margin-right: 20px;
+}
+
+.nav1 .links:hover {
+    background-color: #b5daa4;
+    color: white;
+}
+
+.line{
     width: 100%;
 }
 
@@ -17,21 +44,31 @@ body{
 
 .titolo{
     text-align: center;
-    color: #d3fbd8;
-    font-size: 40px;
+    color: #a2ce8d;
+    font-size: 50px;
     font-family: "Cal Sans", sans-serif;
+    margin-left: 42%;
 }
 
 div{
     text-align: center;
     color: rgb(202, 202, 202);
+    margin: auto;
+}
+
+.titoletti{
+    color: rgb(202, 202, 202);
+    font-size: 30px;
+    font-family: "Cal Sans", sans-serif;
 }
 
 .content{
     font-size: 20px;
+    font-family: "Cal Sans", sans-serif;
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
+    width: 40%;
 }
 
 footer{
