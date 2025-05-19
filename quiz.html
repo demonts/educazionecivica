@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
     <head>
         <meta charset="UTF-8">
         <title>Quiz - Qual è l’immagine vera?</title>
@@ -11,30 +12,38 @@
     </head>
 
     <body>
+        
         <header>
-                <img src="logo.png" id="logo">
-                <h1 class="titolo">Indovina la foto reale</h1>
-                <nav class="nav1">
-                    <a class="links" href="ia.html">Home</a>
-                    <a class="links" href="quiz.html">Quiz</a>
-                    <a class="links" href="#">Bibliografia</a>
-                </nav>
-            </header>
+            <img src="logo.png" id="logo">
+            <h1 class="titolo">Indovina la foto reale</h1>
+            <nav class="nav1">
+                <a class="links" href="ia.html">Home</a>
+                <a class="links" href="quiz.html">Quiz</a>
+                <a class="links" href="bibliografia.html">Bibliografia</a>
+            </nav>
+        </header>
 
         <hr class="line">
-        <div class="descrizione">
-            <p>Ecco un piccolo quiz in cui è possibile provare a riconoscere un'immagine reale mettendola a confronto con un immagine generata dall'IA</p>
+        <div id="content_quiz">
+            <div class="testo_quiz">
+                <p>Se ancora non sei convinto di cosa l'IA possa creare ecco a te un piccolo quiz in cui potrai provare a
+                    riconoscere un'immagine reale mettendola a confronto con un immagine generata dall'IA.</p>
+                <h3 style="color: limegreen;">Scegli l'immagine che ritieni reale</h3>
+            </div>
         </div>
         <div class="quiz-container">
             <img id="img-left" class="quiz-image" src="" alt="Immagine sinistra">
             <img id="img-right" class="quiz-image" src="" alt="Immagine destra">
         </div>
         <h3 id="risultato"> </h3>
-        <button id="riprova" style="display: none;">Prova ancora</button>
+        <div class="box-riprova">
+            <a id="riprova" class="links" href="quiz.html" style="display: none;">Prova ancora</a>
+        </div>
 
         <footer>
             <h2 class="fondo">&#169 Maliçios</h2>
         </footer>
 
     </body>
+
 </html>

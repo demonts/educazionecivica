@@ -3,7 +3,7 @@
     font-style: normal;
 }
 
-header{
+header {
     padding: 10px;
     margin: 0;
     display: flex;
@@ -12,12 +12,26 @@ header{
     position: relative;
 }
 
-#logo{
+.navFissa {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(26, 32, 32);
+    z-index: 1000;
+    border-bottom: 1px solid #a2ce8d;
+}
+
+#logo {
     width: 100px;
     padding: 20px;
 }
 
-.titolo{
+.titolo {
     text-align: center;
     color: #a2ce8d;
     font-size: 55px;
@@ -26,13 +40,13 @@ header{
     left: 40%;
 }
 
-.nav1{
+.nav1 {
     display: flex;
     gap: 30px;
     margin-right: 60px;
 }
 
-.links{
+.links {
     color: #b5daa4;
     font-family: "Cal Sans", sans-serif;
     font-size: 20px;
@@ -48,11 +62,11 @@ header{
     color: white;
 }
 
-.line{
+.line {
     width: 100%;
 }
 
-body{
+body {
     background-color: rgb(26, 32, 32);
     padding: 0px;
     margin: 0px;
@@ -60,24 +74,32 @@ body{
     font-size: 20px;
     text-align: center;
     align-items: center;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.content{
+.content {
     display: flex;
-    text-align: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
+    max-width: 1200px;
+    padding: 40px 20px;
+    font-size: 25px;
+    gap: 40px;
+    margin: 0 auto;
 }
 
-.titoletti{
+.titoletti {
     color: rgb(202, 202, 202);
-    font-size: 30px;
+    font-size: 40px;
     font-family: "Cal Sans", sans-serif;
     text-align: center;
 }
 
-p{
+p {
     text-align: center;
     padding: 10px;
 }
@@ -85,42 +107,97 @@ p{
 .testo {
     padding: 10px;
     text-align: center;
-    width: 30%;
+    width: 50%;
     align-items: center;
+    color: rgb(202, 202, 202);
+    min-width: 300px;
+}
+
+.testo-largo {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    color: rgb(202, 202, 202);
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.testo-largo ul {
+    padding-left: 20px;
+    text-align: left;
+}
+
+.video-destra {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.video-destra .testo {
+    width: 45%;
+    min-width: 300px;
+    text-align: left;
     color: rgb(202, 202, 202);
 }
 
-.centrato{
+.video-destra .immagine {
+    width: 45%;
+    max-width: 600px;
+}
+
+.video-destra video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.centrato {
     align-items: center;
     flex: auto;
 }
 
-.immagine img{
-    width: 60%;
+.immagine img {
+    width: 100%;
     border-radius: 50px;
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    max-width: 500px;
 }
 
-.left{
+.left {
     padding-left: 200px;
 }
 
-.right{
+.right {
     padding-right: 200px;
 }
 
-ul{
+ul {
     text-align: left;
 }
 
-footer{
+footer {
     padding: 10px;
     margin-bottom: auto;
     background-color: #a2ce8d;
 }
 
-.fondo{
+.fondo {
     color: #3b4d35;
     text-align: center;
+}
+
+video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: auto;
 }
 
 /*css pagina quiz*/
@@ -139,8 +216,65 @@ footer{
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.2s;
+    margin: 0 30px;
 }
 
 .quiz-image:hover {
     transform: scale(1.05);
+}
+
+.box-riprova {
+    margin: 40px 0;
+    text-align: center;
+    /* per centrare il pulsante */
+}
+
+.testo_quiz {
+    color: rgb(202, 202, 202);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 120%;
+}
+
+figcaption {
+    color: rgb(202, 202, 202);
+    text-align: center;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 20px;
+}
+
+#content_quiz {
+    align-items: center;
+    text-align: center;
+}
+
+.img_quiz {
+    border-radius: 50px;
+    width: 60%;
+    padding: 10px;
+}
+
+#testo_bibliografia {
+    color: rgb(202, 202, 202);
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 25px;
+    align-items: center;
+}
+
+.link_bibliografia {
+    color: rgb(202, 202, 202);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#puntato_bibliografia {
+    text-align: center;
+    align-items: right;
+}
+
+.link_bibliografia:hover {
+    text-decoration: underline;
 }

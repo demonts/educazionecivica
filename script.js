@@ -1,4 +1,4 @@
-// Funzione per ottenere un numero casuale da 1 a 50
+//funzione per indice random da 1 a 50
 function rndIndex() {
   return Math.floor(Math.random() * 50) + 1;
 }
