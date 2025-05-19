@@ -80,3 +80,25 @@ footer{
     color: #d3fbd8;
     text-align: center;
 }
+
+/*css per pagina quiz*/
+.quiz-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+.quiz-image {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    border: 4px solid #b5daa4;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.quiz-image:hover {
+    transform: scale(1.05);
+}
