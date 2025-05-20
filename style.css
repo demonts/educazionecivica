@@ -69,16 +69,14 @@ header {
 
 body {
     background-color: rgb(26, 32, 32);
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-family: "Cal Sans", sans-serif;
     font-size: 20px;
     text-align: center;
     align-items: center;
     overflow-x: hidden;
     box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .content {
@@ -184,8 +182,9 @@ ul {
 }
 
 footer {
+    min-width: 100vw;
     padding: 10px;
-    margin-bottom: auto;
+    margin: auto;
     background-color: #a2ce8d;
 }
 

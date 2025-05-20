@@ -159,7 +159,10 @@
         </div>
 
         <footer>
-            <h2 class="fondo">&#169 Maliçios</h2>
+            <h2 class="fondo">&#169 <span id="year"></span> Maliçios</h2>
         </footer>
     </body>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 </html>
