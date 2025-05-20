@@ -1,6 +1,6 @@
-//funzione per indice random da 1 a 50
+//funzione per indice random da 1 a 100
 function rndIndex() {
-  return Math.floor(Math.random() * 50) + 1;
+  return Math.floor(Math.random() * 100) + 1;
 }
 
 window.onload = () => {
